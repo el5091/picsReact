@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
     // *2* we can use an arrow function so that "this.state.term" is always = search bar <== IN-USE
     onFormSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.term);
+        this.props.onSubmit(this.state.term);
     }
 
 
